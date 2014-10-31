@@ -1,6 +1,5 @@
 {
-  "name": "todomvc-emberjs",
-  "version": "0.0.0",
+  "private": true,
   "devDependencies": {
     "connect": "^3.3.2",
     "connect-livereload": "^0.5.0",
