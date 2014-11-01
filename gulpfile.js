@@ -9,7 +9,7 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
-    .pipe($.rubySass({
+    .pipe($.sass({
       style: 'expanded',
       precision: 10
     }))
