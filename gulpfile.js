@@ -134,6 +134,6 @@ gulp.task('watch', ['connect', 'serve'], function () {
   gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('test', ['build'], function() {
+gulp.task('test', ['default'], function() {
   $.util.log($.util.colors.green('Test comlpeted successfully'));
 });
