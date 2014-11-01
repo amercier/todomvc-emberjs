@@ -1,7 +1,8 @@
 'use strict';
 // generated on 2014-10-31 using generator-gulp-webapp 0.1.0
 
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    del = require('del');
 
 // load plugins
 var $ = require('gulp-load-plugins')();
@@ -67,8 +68,8 @@ gulp.task('extras', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', function () {
-  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
+gulp.task('clean', function (cb) {
+  del(['.tmp', 'dist'], cb);
 });
 
 gulp.task('build', ['html', 'images', 'fonts', 'extras']);
